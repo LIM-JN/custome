@@ -2957,3 +2957,14 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+.color-red {
+  background-color: red;
+}
+.color-orange {
+  background-color: orange;
+}
+.color-pink {
+  background-color: pink;
+  color:pink;
+}

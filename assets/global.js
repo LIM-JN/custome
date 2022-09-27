@@ -771,6 +771,23 @@ class VariantSelects extends HTMLElement {
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+      this.updateAnnounceBar();
+    }
+  }
+  updateAnnounceBar() {
+    const list = document.querySelector("#announcement-bar").classList;
+    if (this.currentVariant.option2 == "Red" ) {
+      list.remove("color-pink");
+      list.remove("color-orange");
+      list.add("color-red");
+    } else if (this.currentVariant.option2 == "Orange") {
+      list.remove("color-pink");
+      list.remove("color-red");
+      list.add("color-orange")
+    } else if (this.currentVariant.option2 == "Pink") {
+      list.remove("color-red");
+      list.remove("color-orange");
+      list.add("color-pink");
     }
   }
 
